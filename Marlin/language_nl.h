@@ -2,16 +2,11 @@
  * Dutch
  *
  * LCD Menu Messages
- * See also documentation/LCDLanguageFont.md
+ * Please note these are limited to 17 characters!
  *
  */
 #ifndef LANGUAGE_NL_H
 #define LANGUAGE_NL_H
-
-#define MAPPER_NON
-// Define SIMULATE_ROMFONT to see what is seen on the character based display defined in Configuration.h
-//#define SIMULATE_ROMFONT
-#define DISPLAY_CHARSET_ISO10646_1
 
 #define WELCOME_MSG                         MACHINE_NAME " gereed."
 #define MSG_SD_INSERTED                     "Kaart ingestoken"
@@ -23,13 +18,17 @@
 #define MSG_SET_HOME_OFFSETS                "Set home offsets"
 #define MSG_SET_ORIGIN                      "Nulpunt instellen"
 #define MSG_PREHEAT_PLA                     "PLA voorverwarmen"
-#define MSG_PREHEAT_PLA_N                   "PLA voorverw. "
-#define MSG_PREHEAT_PLA_ALL                 "PLA voorverw. aan"
+#define MSG_PREHEAT_PLA0                    "PLA voorverw. 0"
+#define MSG_PREHEAT_PLA1                    "PLA voorverw. 1"
+#define MSG_PREHEAT_PLA2                    "PLA voorverw. 2"
+#define MSG_PREHEAT_PLA012                  "PLA voorverw. aan"
 #define MSG_PREHEAT_PLA_BEDONLY             "PLA voorverw. Bed"
 #define MSG_PREHEAT_PLA_SETTINGS            "PLA verw. conf"
 #define MSG_PREHEAT_ABS                     "ABS voorverwarmen"
-#define MSG_PREHEAT_ABS_N                   "ABS voorverw. "
-#define MSG_PREHEAT_ABS_ALL                 "ABS voorverw. aan"
+#define MSG_PREHEAT_ABS0                    "ABS voorverw. 0"
+#define MSG_PREHEAT_ABS1                    "ABS voorverw. 1"
+#define MSG_PREHEAT_ABS2                    "ABS voorverw. 2"
+#define MSG_PREHEAT_ABS012                  "ABS voorverw. aan"
 #define MSG_PREHEAT_ABS_BEDONLY             "ABS voorverw. Bed"
 #define MSG_PREHEAT_ABS_SETTINGS            "ABS verw. conf"
 #define MSG_COOLDOWN                        "Afkoelen"
@@ -42,18 +41,25 @@
 #define MSG_MOVE_Y                          "Verplaats Y"
 #define MSG_MOVE_Z                          "Verplaats Z"
 #define MSG_MOVE_E                          "Extruder"
+#define MSG_MOVE_E1                         "Extruder2"
+#define MSG_MOVE_E2                         "Extruder3"
 #define MSG_MOVE_01MM                       "Verplaats 0.1mm"
 #define MSG_MOVE_1MM                        "Verplaats 1mm"
 #define MSG_MOVE_10MM                       "Verplaats 10mm"
 #define MSG_SPEED                           "Snelheid"
 #define MSG_NOZZLE                          "Nozzle"
+#define MSG_NOZZLE1                         "Nozzle2"
+#define MSG_NOZZLE2                         "Nozzle3"
 #define MSG_BED                             "Bed"
 #define MSG_FAN_SPEED                       "Fan snelheid"
 #define MSG_FLOW                            "Flow"
+#define MSG_FLOW0                           "Flow 0"
+#define MSG_FLOW1                           "Flow 1"
+#define MSG_FLOW2                           "Flow 2"
 #define MSG_CONTROL                         "Control"
-#define MSG_MIN                             LCD_STR_THERMOMETER " Min"
-#define MSG_MAX                             LCD_STR_THERMOMETER " Max"
-#define MSG_FACTOR                          LCD_STR_THERMOMETER " Fact"
+#define MSG_MIN                             " \002 Min"
+#define MSG_MAX                             " \002 Max"
+#define MSG_FACTOR                          " \002 Fact"
 #define MSG_AUTOTEMP                        "Autotemp"
 #define MSG_ON                              "Aan "
 #define MSG_OFF                             "Uit"
@@ -80,11 +86,6 @@
 #define MSG_ESTEPS                          "Esteps/mm"
 #define MSG_TEMPERATURE                     "Temperatuur"
 #define MSG_MOTION                          "Beweging"
-#define MSG_VOLUMETRIC                      "Filament"
-#define MSG_VOLUMETRIC_ENABLED		        "E in mm3"
-#define MSG_FILAMENT_SIZE_EXTRUDER_0        "Fil. Dia. 1"
-#define MSG_FILAMENT_SIZE_EXTRUDER_1        "Fil. Dia. 2"
-#define MSG_FILAMENT_SIZE_EXTRUDER_2        "Fil. Dia. 3"
 #define MSG_CONTRAST                        "LCD contrast"
 #define MSG_STORE_EPROM                     "Geheugen opslaan"
 #define MSG_LOAD_EPROM                      "Geheugen laden"
@@ -123,8 +124,8 @@
 #define MSG_BABYSTEP_Y                      "Babystap Y"
 #define MSG_BABYSTEP_Z                      "Babystap Z"
 #define MSG_ENDSTOP_ABORT                   "Endstop afbr."
-#define MSG_END_HOUR                        "hours"
-#define MSG_END_MINUTE                      "minutes"
+
+#define MSG_RECTRACT                        "Terugtrekken"
 
 #ifdef DELTA_CALIBRATION_MENU
     #define MSG_DELTA_CALIBRATE             "Delta Calibration"
